@@ -1,0 +1,29 @@
+export const exhibitions = [
+  {
+    id: 'ex-2025',
+    year: '2025',
+    title_es: 'Cartografías del color',
+    title_en: 'Cartographies of Color',
+    location: 'Madrid, España',
+    description_es: 'Exposición individual con obra abstracta de gran formato.',
+    description_en: 'Solo exhibition featuring large-format abstract paintings.',
+  },
+  {
+    id: 'ex-2023',
+    year: '2023',
+    title_es: 'Paisaje y emoción',
+    title_en: 'Landscape and Emotion',
+    location: 'Valencia, España',
+    description_es: 'Muestra colectiva centrada en nuevas miradas del paisaje contemporáneo.',
+    description_en: 'Group exhibition focused on contemporary approaches to landscape.',
+  },
+  {
+    id: 'ex-2021',
+    year: '2021',
+    title_es: 'Materia expandida',
+    title_en: 'Expanded Matter',
+    location: 'Sevilla, España',
+    description_es: 'Selección de piezas mixtas y acuarelas experimentales.',
+    description_en: 'Selection of mixed media pieces and experimental watercolours.',
+  },
+];
