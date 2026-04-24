@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENDELCON | Producción de Eventos y Experiencias</title>
+    <meta
+      name="description"
+      content="Diseñamos y producimos experiencias memorables para marcas, empresas y celebraciones privadas."
+    />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <a href="#inicio" class="logo">ENDELCON</a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="menu">Menú</button>
+        <ul id="menu" class="menu">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#contacto" class="btn btn-sm">Cotizar</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="container hero-content">
+          <p class="badge">Producción integral de eventos</p>
+          <h1>Eventos que se sienten, se recuerdan y generan resultados.</h1>
+          <p class="hero-copy">
+            Transformamos ideas en experiencias premium para marcas, empresas y celebraciones. Dirección creativa,
+            logística y ejecución impecable en un solo equipo.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#contacto">Quiero una propuesta</a>
+            <a class="btn btn-ghost" href="#portfolio">Ver trabajos</a>
+          </div>
+          <ul class="hero-metrics">
+            <li><strong>+120</strong><span>eventos producidos</span></li>
+            <li><strong>98%</strong><span>clientes recurrentes</span></li>
+            <li><strong>24/7</strong><span>acompañamiento</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="servicios" class="section">
+        <div class="container">
+          <h2>Servicios diseñados para impacto real</h2>
+          <div class="grid cards">
+            <article class="card">
+              <h3>Eventos corporativos</h3>
+              <p>Lanzamientos, convenciones, team buildings y experiencias B2B enfocadas en marca y negocio.</p>
+            </article>
+            <article class="card">
+              <h3>Producción técnica</h3>
+              <p>Audio, iluminación, pantallas, escenografía y coordinación operativa de principio a fin.</p>
+            </article>
+            <article class="card">
+              <h3>Experiencias de marca</h3>
+              <p>Activaciones inmersivas, storytelling y formatos innovadores para conectar con tu audiencia.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section section-dark">
+        <div class="container">
+          <h2>Proyectos recientes</h2>
+          <div class="grid portfolio">
+            <article>
+              <p class="tag">Lanzamiento</p>
+              <h3>Evento de producto para 500 asistentes</h3>
+              <p>Concepto creativo, escenografía y transmisión en vivo con cobertura multicámara.</p>
+            </article>
+            <article>
+              <p class="tag">Convención</p>
+              <h3>Encuentro anual corporativo</h3>
+              <p>Agenda híbrida, logística de speakers internacionales y experiencia interactiva.</p>
+            </article>
+            <article>
+              <p class="tag">Activación</p>
+              <h3>Pop-up experiencial de marca</h3>
+              <p>Diseño de journey, montaje express y contenido social en tiempo real.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="proceso" class="section">
+        <div class="container">
+          <h2>Cómo trabajamos contigo</h2>
+          <ol class="steps">
+            <li><strong>1. Brief estratégico:</strong> objetivos, audiencia y presupuesto.</li>
+            <li><strong>2. Concepto y propuesta:</strong> idea creativa + plan operativo completo.</li>
+            <li><strong>3. Producción y ejecución:</strong> gestión integral con seguimiento en tiempo real.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="contacto" class="section cta">
+        <div class="container cta-content">
+          <div>
+            <h2>¿Listo para elevar tu próximo evento?</h2>
+            <p>Cuéntanos tu idea y te enviamos una propuesta en menos de 24 horas hábiles.</p>
+          </div>
+          <form class="contact-form" action="#" method="post">
+            <label>
+              Nombre
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              ¿Qué evento quieres producir?
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button type="submit" class="btn">Solicitar propuesta</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> ENDELCON. Todos los derechos reservados.</p>
+        <a href="#inicio">Volver arriba ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+:root {
+  --bg: #070c1b;
+  --surface: #111a30;
+  --text: #e6edf8;
+  --muted: #9cb0d2;
+  --brand: #4f8cff;
+  --brand-2: #7a5cff;
+  --border: #25304f;
+  --radius: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  background: radial-gradient(circle at top right, #172445, var(--bg) 40%);
+  color: var(--text);
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background: rgba(7, 12, 27, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 0;
+}
+
+.logo {
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.hero {
+  padding: 6rem 0 4rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: #c5d7ff;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  margin: 1rem 0;
+}
+
+.hero-copy {
+  max-width: 65ch;
+  color: var(--muted);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 0.8rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.btn {
+  background: linear-gradient(120deg, var(--brand), var(--brand-2));
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 0.8rem 1.1rem;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--border);
+}
+
+.btn-sm {
+  padding: 0.45rem 0.85rem;
+}
+
+.hero-metrics {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0 0;
+  padding: 0;
+}
+
+.hero-metrics li {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.hero-metrics strong {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.hero-metrics span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.cards {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card,
+.portfolio article {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.3rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.section-dark {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.portfolio {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tag {
+  color: #9fc5ff;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.steps li {
+  margin: 0.85rem 0;
+  color: var(--muted);
+}
+
+.cta-content {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form {
+  display: grid;
+  gap: 0.8rem;
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-top: 0.35rem;
+  background: #090f21;
+  border: 1px solid #344264;
+  border-radius: 8px;
+  color: white;
+  padding: 0.75rem;
+}
+
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.4rem 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-content a {
+  color: #c5d7ff;
+}
+
+@media (max-width: 800px) {
+  .cards,
+  .portfolio,
+  .cta-content,
+  .hero-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+    background: transparent;
+    color: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.45rem 0.7rem;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    right: 4%;
+    left: 4%;
+    background: #0b1327;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0.8rem;
+    flex-direction: column;
+    display: none;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+}
